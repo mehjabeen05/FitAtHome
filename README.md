@@ -1,17 +1,27 @@
-# fit_at_home
+# FitAtHome
 
-A new Flutter project.
+An on-demand home wellness booking app — book verified Yoga, Fitness, Physiotherapy, or Stretching & Mobility professionals for a 5, 10, 15, 30, or 60 minute session at your doorstep.
 
-## Getting Started
+![FitAtHome UI preview](docs/ui_preview.png)
 
-This project is a starting point for a Flutter application.
+## Status
 
-A few resources to get you started if this is your first Flutter project:
+This is a **UI-only build with mock data** — no backend is wired up yet. It exists to validate the screens and flow before connecting Firebase.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- **User app** — Splash, Onboarding, Login, Home, Service Selection, Professional Profile, Booking, Booking Confirmation, My Bookings, Profile
+- **Professional app** — Login, Dashboard, Bookings, Earnings, Profile
+- **Admin panel** — Dashboard, Users, Professionals, Bookings, Services, Payments, Complaints
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech stack
+
+- Flutter / Dart
+- Firebase Authentication, Cloud Firestore, Firebase Storage *(planned — not yet integrated)*
+
+## Running the app
+
+```powershell
+flutter pub get
+flutter run -d chrome
+```
+
+The Professional and Admin experiences are reachable via two links on the Login screen, since role-based auth doesn't exist yet.
