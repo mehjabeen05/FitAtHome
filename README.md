@@ -25,3 +25,4 @@ flutter run -d chrome
 ```
 
 The Professional and Admin experiences are reachable via two links on the Login screen, since role-based auth doesn't exist yet.
+mehjabeen429@gmail.com
